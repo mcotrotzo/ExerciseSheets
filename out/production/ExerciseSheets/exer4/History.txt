@@ -1,0 +1,30 @@
+commit 69ed02f1702977d5da016993195ddabbe0468a32 (HEAD -> origin, origin/origin)
+Merge: 924f44e 13f1f48
+Author: csba1184 <Marco.Cotrotzo@uibk.ac.at>
+Date:   Thu Nov 3 21:09:04 2022 +0100
+
+    Merge branch 'dev' into origin
+
+commit 13f1f48a80b299652cb1998167b88f8dfb3d3875 (origin/dev, dev)
+Author: csba1184 <Marco.Cotrotzo@uibk.ac.at>
+Date:   Thu Nov 3 21:07:37 2022 +0100
+
+    Add solved exercises to dev
+
+commit 924f44ee31769c5ac0e9f81d9871db76ef4f00f8
+Author: csba1184 <Marco.Cotrotzo@uibk.ac.at>
+Date:   Thu Nov 3 21:05:24 2022 +0100
+
+    Add Description
+
+commit 81beace0f925c2932df2c06933ef2d8f78713ab7
+Author: csba1184 <Marco.Cotrotzo@uibk.ac.at>
+Date:   Thu Nov 3 21:00:01 2022 +0100
+
+    Commit Ordner zu def
+
+commit d091fb6c1dd27f7691803debabc436c486639731
+Author: csba1184 <Marco.Cotrotzo@uibk.ac.at>
+Date:   Thu Nov 3 20:55:50 2022 +0100
+
+    2.5)Add README

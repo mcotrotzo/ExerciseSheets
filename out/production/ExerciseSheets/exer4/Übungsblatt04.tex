@@ -1,0 +1,43 @@
+\documentclass[]{article}
+\title{Softwarearchitektur Übungsblatt 04}
+\author{Marco Cotrotzo}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\date{}
+\begin{document}
+	\maketitle
+\renewcommand{\labelenumi}{\alph{enumi})}
+\section{Aufgabe}
+\begin{enumerate}
+	\item Ermöglicht es Klassen die eigentlich inkompatibel zueinander sind, kompatibel zu machen. Dazu verknüpft man die die zwei Klassen mit einem Adapter. Der Client greift auf Methoden in einem Interface(Target) zu, die von einem Adapter implmentiert werden. Die Implementationen rufen die Methoden der Adaptieren Klasse auf.\\\\
+	Das Decorator Pattern erlaubt Objekte dynamisch zu modifizieren. So kann man das Verhalten von Objekten zur Laufzeit verändern. Die abstrakte Klasse Component bildet die Grundlage. Die konkrete Komponente und die abstrakte Klasse Decorator erben von dieser Klasse. Die  konkreten Dekorationen erben von Decorator. Außerdem wird dem Decorator Konstrukter eine Komponente übergeben. So kann man konkrete Komponente mit Dekorationen dekorieren\\\\
+	Das Facade Pattern stellt eine Schnittstelle für den Client bereit. Die Methoden in dieser Schnittstelle verinfachen die Verwendung des Subsystems.\\\\
+	Das Proxy Pattern stellt ein Stellvertreter-Objekt für ein anderes Objekt zur Verfügung.
+	\item 
+	Das Proxy Pattern ist hier die erste Wahl.
+	   
+\end{enumerate}
+\section{Aufgabe}
+\begin{enumerate}
+\item installiert
+\item git clone https://git.uibk.ac.at/csba1184/swa-ws22-uebungszettel-4.git
+\item cd $->$ Verzeichnis
+\item git add README.txt
+Beim Stagen wird bei einer Änderung im Verzeichnis wird Git damit angewiesen, Aktualisierungen einer bestimmten Datei in den nächsten Commit aufzunehmen.
+Mit dem Befehl git commit erfasst man einen Snapshot der aktuell bereitgestellten Änderungen des Projekts.
+Beim pushen wird das lokale Repository hochgeladen.
+\item git branch
+Branches sind unabhängige Entwicklungslinien. So  kann man Änderungen durchführen ohne, dass es mit der Haupt Code basis gemerged wird.
+\item
+git checkout dev um den Branch dev auszuwählen 
+git push origin dev
+Beim merge werden Änderungen in dev in der Main Branch aktualisiert. Nun hat auch die Main Branch den Quellcode.
+\item
+Das Problem wird Merge Conflict genannt. Durch öffnen der Datei im main Branch sieht man wo der Konflikt statt findet. Nun kann man es bearbeiten, abspeichern, stagen, commiten und pushen. So ist das Problem gelöst.
+
+
+
+
+\end{enumerate}
+	
+\end{document}
