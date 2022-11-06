@@ -5,7 +5,7 @@ import java.util.List;
 public class MangaProxy implements MangaServiceInterface {
 
     private RealManga realmanga;
-    public static int downloadCalls;
+    private int downloadCalls;
 
     public MangaProxy (RealManga realmanga) {
         downloadCalls = 0;
@@ -28,9 +28,11 @@ public class MangaProxy implements MangaServiceInterface {
             throw new IllegalArgumentException("Id below zero or user which does not exist");
         }
         if(!user.hasDownloadPermissions()){
-            throw new MangaException("User has no Download Permissions");
+            downloadCalls++;
+            throw new MangaException("User has no Download Permissions!\nAmount of downloads: " + downloadCalls);
         }
         downloadCalls++;
+        System.out.println(user.getUsername() + " is downloading!\nAmount of downloads:"+downloadCalls+"\n");
         return realmanga.downloadUrl(id,user);
     }
 

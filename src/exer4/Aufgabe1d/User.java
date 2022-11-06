@@ -22,5 +22,9 @@ public class User {
         }
         return mangaLimit;
     }
+
+    public String getUsername() {
+        return username;
+    }
 }
 

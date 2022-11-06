@@ -74,7 +74,6 @@ class MangaTest {
         realManga.addManga(manga2);
         MangaServiceInterface proxy = new MangaProxy(realManga);
         proxy.downloadUrl(123,user);
-        assertEquals(MangaProxy.downloadCalls,1);
         assertEquals("manga1.com",proxy.downloadUrl(123,user));
         assertEquals(proxy.downloadUrl(123,user),realManga.downloadUrl(123,user));
 
